@@ -1,0 +1,6 @@
+.stickySideMenu{
+    @media only screen and (max-width: 767px) {
+        position: absolute;
+        display: none;
+    }
+}
