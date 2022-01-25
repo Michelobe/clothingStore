@@ -1,5 +1,17 @@
-@media (min-width: 768px){
-    .mdNavSpace{
-        width: 50%;
+
+@media only screen and (min-width: 768px){
+    .jumboBrand{
+        position: absolute;
+        display: none;
+    }
+}
+.mobileMenu {
+    margin: 0;
+    padding-left: 1rem;
+    &.jumboSearch{
+        @media only screen and (max-width: 770px){
+            position: absolute;
+            display: none;
+        }  
     }
 }

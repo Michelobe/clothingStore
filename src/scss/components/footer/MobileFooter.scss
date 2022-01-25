@@ -1,0 +1,23 @@
+
+@media only screen and (max-width: 768px){
+    .footerCol{
+        text-align: center;
+        i{
+            background: gray;
+            border-radius: 50%;
+            color: white;
+            padding: .5rem;
+            width: 2rem;
+        }
+    }
+    .accWidth{
+        padding: 0;
+        border-top: 2px gray solid !important;
+        &:last-child{
+            border-bottom: 2px gray solid !important;
+        }
+    }
+    .container{
+        max-width: 100%;
+    }
+}
