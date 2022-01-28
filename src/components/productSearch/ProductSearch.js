@@ -5,12 +5,12 @@ import '../../scss/components/productSearch/productSearch.scss';
 
 function ProductSearch() {
     return (
-        <div className='container-md'>
+        <div className=' container largeContainer'>
             <div className='row'>
-                <div className='col-md-3 gy-5 sticky-md-top stickySideMenu'>
+                <div className='col-md-2 gy-5 sticky-md-top stickySideMenu'>
                     <SideMenu />
                 </div>
-                <div className='col-md-9'>
+                <div className='col-md-10'>
                     <ProductDisplay />
                 </div>
             </div>

@@ -26,7 +26,7 @@ function JumboNav() {
                         </Nav>
                     </div>
                     <div className='row bg-light mobileMenu'>
-                        <Nav className="navCenter justify-content-center">
+                        <Nav className="navCenter justify-content-center flex-wrap">
                             <Nav.Link href="#home">GIFTS</Nav.Link>
                             <Nav.Link href="#features">MEN</Nav.Link>
                             <Nav.Link href="#pricing">WOMEN</Nav.Link>
