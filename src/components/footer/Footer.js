@@ -4,7 +4,7 @@ import '../../scss/components/footer/Footer.scss';
 
 function Footer() {
     return (
-        <Navbar>
+        <Navbar className='paddingReset'>
             <Nav className='container-fluid justify-content-center align-items-start footerContainer bg-light'>
                 <div className='container row'>
                     <div className='col footerCol'>
@@ -37,7 +37,7 @@ function Footer() {
                         <div className='row footerOption'>SITE MAP</div>
                         <div className='row footerOption'>TRENDING SEARCHES</div>
                     </div>
-                    <div className='col-3 footerCol'>
+                    <div className='col-4 footerCol'>
                         <Form className='mb-4'>
                             <Form.Group className="mb-3 submitForm" controlId="formBasicEmail">
                                 <Form.Label className='contactHeader'>SIGN UP FOR EMAIL</Form.Label>
@@ -73,7 +73,11 @@ function Footer() {
                             </div>
                         </div>
                         <div className='row form-label contactHeader'>HELP US IMPROVE</div>
-                        <div className='row'>Take a quick survey about your site visit. <u>Begin Survey</u></div>
+                        <div className='row'>
+                            <p>
+                                Take a quick survey about your site visit. <u>Begin Survey</u>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </Nav>

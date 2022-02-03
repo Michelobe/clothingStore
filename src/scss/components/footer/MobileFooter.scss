@@ -1,9 +1,11 @@
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
     .footerCol{
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         i{
-            background: gray;
+            background: #666666;
             border-radius: 50%;
             color: white;
             padding: .5rem;

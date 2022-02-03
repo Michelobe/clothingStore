@@ -5,7 +5,7 @@ import MobileFooter from './components/footer/MobileFooter.js';
 import ProductSearch from './components/productSearch/ProductSearch.js';
 
 function App() {
-    const {height, width} = useWindowDimensions();
+    const {width} = useWindowDimensions();
 
     function getWindowDimensions(){
         const { innerWidth: width, innerHeight: height } = window;
@@ -33,7 +33,7 @@ function App() {
         <div className="App">
             <JumboNav />
             <ProductSearch />
-            {width > 768 ? <Footer /> : <MobileFooter />}
+            {width >= 768 ? <Footer /> : <MobileFooter />}
         </div>
     );
 }
