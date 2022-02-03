@@ -5,7 +5,7 @@ import '../../scss/components/productSearch/productDisplay.scss';
 function ProductDisplay() {
     return (
         <div className='container'>
-            <div className='row row-cols-sm-4 row-cols-md-4 justify-content-around'>
+            <div className='row row-cols-2 row-cols-md-4 displayContainer justify-content-center'>
                 <Card className='col gy-5 displayCard'>
                     <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
                     <Card.Body>
