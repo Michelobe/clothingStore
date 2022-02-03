@@ -72,6 +72,28 @@ function ProductDisplay() {
                         <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
                 </Card>
+                <Card className='col gy-5 displayCard'>
+                    <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                    <Card.Body>
+                        <Card.Title>Card Title</Card.Title>
+                        <Card.Text>
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card's content.
+                        </Card.Text>
+                        <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+                </Card>
+                <Card className='col gy-5 displayCard'>
+                    <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                    <Card.Body>
+                        <Card.Title>Card Title</Card.Title>
+                        <Card.Text>
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card's content.
+                        </Card.Text>
+                        <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+                </Card>
             </div>
         </div>
     );
