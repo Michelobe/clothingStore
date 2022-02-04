@@ -37,7 +37,7 @@ function Footer() {
                         <div className='row footerOption'>SITE MAP</div>
                         <div className='row footerOption'>TRENDING SEARCHES</div>
                     </div>
-                    <div className='col-4 footerCol'>
+                    <div className='col-4 col-xl-3 footerCol'>
                         <Form className='mb-4'>
                             <Form.Group className="mb-3 submitForm" controlId="formBasicEmail">
                                 <Form.Label className='contactHeader'>SIGN UP FOR EMAIL</Form.Label>

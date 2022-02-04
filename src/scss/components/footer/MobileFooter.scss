@@ -1,25 +1,63 @@
 
+
 @media only screen and (max-width: 767px){
+    .container{
+        max-width: 100%;
+    }
     .footerCol{
         display: flex;
         justify-content: center;
         align-items: center;
-        i{
+        .footerHeader{
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #666666;
+        }
+        .iconContainer{
             background: #666666;
             border-radius: 50%;
             color: white;
-            padding: .5rem;
-            width: 2rem;
+            padding: .5rem 1.2rem .49rem 1.2rem;
+            margin: 0 .5rem;
+            font-size: 1.25rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 2rem;
         }
     }
     .accWidth{
         padding: 0;
-        border-top: 2px gray solid !important;
+        border-top: 3px #666666 solid !important;
         &:last-child{
-            border-bottom: 2px gray solid !important;
+            border-bottom: 3px gray solid !important;
         }
     }
-    .container{
-        max-width: 100%;
+//=== OVERRIDES react-bootstrap COMPONENT STYLING ==
+    .accordion-button{
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #666666;
+    }
+    .accordion-button:not(.collapsed){
+        color: #666666;
+        background: transparent;
+    }
+    .accordion-button:focus{
+        box-shadow: none;
+    }
+    .accordion-button:not(.collapsed){
+        box-shadow: none;
+    }
+    .accordion-body{
+        padding: 0 1.25rem 1rem 1.25rem;
+    }
+//===================================================
+    .footerOption{
+        font-size: .75rem;
+        color: #666666;
+        margin-left: .5rem;
     }
 }
