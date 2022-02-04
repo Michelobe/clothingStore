@@ -1,17 +1,35 @@
 
-@media only screen and (min-width: 768px){
-    .jumboBrand{
-        position: absolute;
-        display: none;
-    }
+.jumboBrand{
+    margin: 0 0 0 1rem;
 }
 .mobileMenu {
     margin: 0;
     padding-left: 1rem;
-    &.jumboSearch{
-        @media only screen and (max-width: 767px){
-            position: absolute;
-            display: none;
-        }  
+}
+
+
+
+//THE FOLLOWING HAS BEEN DONE BECAUSE OF THE WAY REACT BOOTSTRAP WORKS.
+//I WAS UNABLE TO SEPARATE THE BRAND NAME IN THE NAVBAR BETWEEN MOBILE
+//AND TABLET/DESKTOP, SO I MADE 2 SEPARATE ONES, THEN HID THE SEARCH
+//BAR ON MOBILE
+// ==============================================
+// HIDES MOBILE BRAND NAME ======================
+@media only screen and (min-width: 768px){
+    .jumboBrand{
+        position: absolute;
+        display: none;
+        margin: 0 0 0 5rem;
     }
 }
+// ==============================================
+
+
+// HIDES TABLET/DESKTOP BRAND NAME AND SEARCH BAR
+@media only screen and (max-width: 767px){
+    .mobileMenu.jumboSearch{
+        position: absolute;
+        display: none;
+    }
+}
+// ==============================================

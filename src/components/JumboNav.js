@@ -9,8 +9,11 @@ function JumboNav() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <div className='col'>
+
+                    {/*========== ONLY SHOWS >= 768px ===============*/}
+                    {/* SEE SCSS FILE FOR NOTES */}
                     <div className='row mobileMenu jumboSearch'>
-                        <Navbar.Brand className="col-md-4" href="#home">React-Bootstrap</Navbar.Brand>
+                        <Navbar.Brand className="col-md-4 mobileBrand" href="#home">React-Bootstrap</Navbar.Brand>
                         <Form className=" d-flex col-sm-12 col-md-4">
                             <FormControl
                             type="search"
@@ -25,6 +28,8 @@ function JumboNav() {
                             <Nav.Link href="#link">Link</Nav.Link>
                         </Nav>
                     </div>
+                    {/*========== ONLY SHOWS >= 768px ===============*/}
+
                     <div className='row bg-light mobileMenu'>
                         <Nav className="navCenter justify-content-center flex-wrap">
                             <Nav.Link href="#home">GIFTS</Nav.Link>
