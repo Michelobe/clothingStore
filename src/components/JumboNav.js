@@ -14,7 +14,7 @@ function JumboNav() {
                     {/* SEE SCSS FILE FOR NOTES */}
                     <div className='row mobileMenu jumboSearch'>
                         <Navbar.Brand className="col-md-4 mobileBrand" href="#home">React-Bootstrap</Navbar.Brand>
-                        <Form className=" d-flex col-sm-12 col-md-4">
+                        <Form className={`d-flex col-sm-12 col-md-4`}>
                             <FormControl
                             type="search"
                             placeholder="Search"

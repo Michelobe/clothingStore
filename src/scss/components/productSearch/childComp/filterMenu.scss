@@ -1,0 +1,10 @@
+.filterMenu{
+    border-bottom: 1px dotted black;
+    padding-bottom: 2rem;
+    .sortBy{
+        @media only screen and (max-width: 767px) {
+            position: absolute;
+            display: none;
+        }
+    }
+}

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
-import '../../scss/components/productSearch/productDisplay.scss';
+import '../../../scss/components/productSearch/childComp/productDisplay.scss';
 
 function ProductDisplay() {
     return (
-        <div className='container'>
+        <div className='container' style={{padding: 0}}>
             <div className='row row-cols-2 row-cols-md-4 displayContainer justify-content-center'>
-                <Card className='col gy-5 displayCard'>
+                <Card className='col displayCard'>
                     <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
@@ -17,7 +17,7 @@ function ProductDisplay() {
                         <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
                 </Card>
-                <Card className='col gy-5 displayCard'>
+                <Card className='col displayCard'>
                     <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
@@ -28,7 +28,7 @@ function ProductDisplay() {
                         <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
                 </Card>
-                <Card className='col gy-5 displayCard'>
+                <Card className='col displayCard'>
                     <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
@@ -39,7 +39,7 @@ function ProductDisplay() {
                         <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
                 </Card>
-                <Card className='col gy-5 displayCard'>
+                <Card className='col displayCard'>
                     <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
@@ -50,7 +50,7 @@ function ProductDisplay() {
                         <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
                 </Card>
-                <Card className='col gy-5 displayCard'>
+                <Card className='col displayCard'>
                     <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
@@ -61,7 +61,7 @@ function ProductDisplay() {
                         <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
                 </Card>
-                <Card className='col gy-5 displayCard'>
+                <Card className='col displayCard'>
                     <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
@@ -72,7 +72,7 @@ function ProductDisplay() {
                         <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
                 </Card>
-                <Card className='col gy-5 displayCard'>
+                <Card className='col displayCard'>
                     <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
@@ -83,7 +83,7 @@ function ProductDisplay() {
                         <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
                 </Card>
-                <Card className='col gy-5 displayCard'>
+                <Card className='col displayCard'>
                     <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
