@@ -3,10 +3,38 @@
 .filterMenu{
     border-bottom: 1px dotted black;
     padding-bottom: 2rem;
+    .btnStyle{
+        min-width: 190px;
+        display: flex;
+        justify-content: center;
+    }
+    .sortDropDwn{
+        border: 2px solid black;
+        font-size: .8rem;
+        font-weight: bold;
+    }
     .sortBy{
         @media only screen and (max-width: 767px) {
             position: absolute;
             display: none;
         }
     }
+    .filterBtn{
+        #innerBtn{
+            width: 100%;
+        }
+        @media only screen and (min-width: 767px) {
+            position: absolute;
+            display: none;
+        }
+    }
+}
+
+//=== OVERRIDES react-bootstrap COMPONENT STYLING ==
+.btn{
+    border-radius: 0;
+    width: 100%;
+    margin: .5rem;
+    font-size: .8rem;
+    font-weight: bold;
 }
