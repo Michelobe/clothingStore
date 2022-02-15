@@ -4,6 +4,15 @@ import '../../../scss/components/productSearch/childComp/filterMenu.scss';
 
 function FilterMenu() {
     const [modalShow, setModalShow] = React.useState(false);
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementsByClassName("filterMenu").style.padding = "2rem 0 0 0";
+    } else {
+    document.getElementsByClassName("filterMenu").style.padding = "2em 3em";
+    }
+    }
 
     // FREE STORE PICKUP MODAL
     function FreeStorePickup(props) {
@@ -109,7 +118,7 @@ function FilterMenu() {
     }
 
     return (
-        <Nav className='d-flex flex-wrap justify-content-between my-5 filterMenu' variant="pills">
+        <Nav className='d-flex flex-wrap justify-content-between my-5 sticky-top filterMenu' variant="pills">
             <div>
                 <Nav.Item>
                     <Nav.Link disabled>
