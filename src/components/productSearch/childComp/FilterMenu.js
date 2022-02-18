@@ -3,15 +3,60 @@ import { Nav, NavDropdown, OverlayTrigger, Popover, Button, Modal, Accordion } f
 import '../../../scss/components/productSearch/childComp/filterMenu.scss';
 
 function FilterMenu() {
-    const [modalShow, setModalShow] = React.useState(false);
+    const [filterShow, setFilterShow] = React.useState(false);
+    const [pickupShow, setPickupShow] = React.useState(false);
+    const [deliveryShow, setDeliveryShow] = React.useState(false);
+
+    // CHANGE STYLING UPON SCROLL ===================================================
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementsByClassName("filterMenu").style.padding = "2rem 0 0 0";
-    } else {
-    document.getElementsByClassName("filterMenu").style.padding = "2em 3em";
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            document.getElementById("filterMenu").style.padding = ".5rem 0";
+        } else {
+            document.getElementById("filterMenu").style.padding = "2rem 0";
+        }
     }
+
+    // FILTER MODAL
+    function FilterModal(props) {
+        return (
+            <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+            >
+                <Modal.Header closeButton>
+                    <Modal.Title id="contained-modal-title-vcenter">
+                    Close
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <Accordion className='sticky-top sideMenu' 
+                            defaultActiveKey="0"
+                            flush>
+                        <Accordion.Item eventKey="0">
+                            <Accordion.Header>Category</Accordion.Header>
+                            <Accordion.Body>Shirts</Accordion.Body>
+                            <Accordion.Body>Shirts</Accordion.Body>
+                            <Accordion.Body>Shirts</Accordion.Body>
+                            <Accordion.Body>Shirts</Accordion.Body>
+                            <Accordion.Body>Shirts</Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header>Featured</Accordion.Header>
+                            <Accordion.Body>Flannels</Accordion.Body>
+                            <Accordion.Body>Flannels</Accordion.Body>
+                            <Accordion.Body>Flannels</Accordion.Body>
+                        </Accordion.Item>
+                    </Accordion>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button onClick={props.onHide}>Close</Button>
+                </Modal.Footer>
+            </Modal>
+        );
     }
 
     // FREE STORE PICKUP MODAL
@@ -76,49 +121,10 @@ function FilterMenu() {
         );
     }
     
-    // FILTER MODAL
-    function FilterModal(props) {
-        return (
-            <Modal
-            {...props}
-            size="lg"
-            aria-labelledby="contained-modal-title-vcenter"
-            centered
-            >
-                <Modal.Header closeButton>
-                    <Modal.Title id="contained-modal-title-vcenter">
-                    Close
-                    </Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <Accordion className='sticky-top sideMenu' 
-                            defaultActiveKey="0"
-                            flush>
-                        <Accordion.Item eventKey="0">
-                            <Accordion.Header>Category</Accordion.Header>
-                            <Accordion.Body>Shirts</Accordion.Body>
-                            <Accordion.Body>Shirts</Accordion.Body>
-                            <Accordion.Body>Shirts</Accordion.Body>
-                            <Accordion.Body>Shirts</Accordion.Body>
-                            <Accordion.Body>Shirts</Accordion.Body>
-                        </Accordion.Item>
-                        <Accordion.Item eventKey="1">
-                            <Accordion.Header>Featured</Accordion.Header>
-                            <Accordion.Body>Flannels</Accordion.Body>
-                            <Accordion.Body>Flannels</Accordion.Body>
-                            <Accordion.Body>Flannels</Accordion.Body>
-                        </Accordion.Item>
-                    </Accordion>
-                </Modal.Body>
-                <Modal.Footer>
-                    <Button onClick={props.onHide}>Close</Button>
-                </Modal.Footer>
-            </Modal>
-        );
-    }
 
+    //RETURN RETURN RETURN RETURN RETURN RETURN RETURN RETURN RETURN RETURN 
     return (
-        <Nav className='d-flex flex-wrap justify-content-between my-5 sticky-top filterMenu' variant="pills">
+        <Nav id="filterMenu" className='d-flex flex-wrap justify-content-between sticky-top filterMenu' variant="pills" style={{'zIndex': 4, 'top': 0}}>
             <div>
                 <Nav.Item>
                     <Nav.Link disabled>
@@ -136,13 +142,13 @@ function FilterMenu() {
                     <NavDropdown.Item>Price High - Low</NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Item className='filterBtn btnStyle'>
-                    <Button id='innerBtn' variant="primary" onClick={() => setModalShow(true)}>
+                    <Button id='innerBtn' variant="primary" onClick={() => setFilterShow(true)}>
                         Filter
                     </Button>
 
                     <FilterModal
-                        show={modalShow}
-                        onHide={() => setModalShow(false)}
+                        show={filterShow}
+                        onHide={() => setFilterShow(false)}
                     />
                 </Nav.Item>
                 <Nav.Item className='btnStyle'>
@@ -153,13 +159,13 @@ function FilterMenu() {
                             <Popover style={{zIndex: 5}}>
                             <Popover.Header as="h3">{`Dunzo`}</Popover.Header>
                             <Popover.Body>
-                                <Button variant="primary" onClick={() => setModalShow(true)}>
+                                <Button variant="primary" onClick={() => setPickupShow(true)}>
                                     Free Store Pick Up
                                 </Button>
 
                                 <FreeStorePickup
-                                    show={modalShow}
-                                    onHide={() => setModalShow(false)}
+                                    show={pickupShow}
+                                    onHide={() => setPickupShow(false)}
                                 />
                             </Popover.Body>
                             </Popover>
@@ -176,13 +182,13 @@ function FilterMenu() {
                             <Popover style={{zIndex: 5}}>
                             <Popover.Header as="h3">{`Dunzo`}</Popover.Header>
                             <Popover.Body>
-                                <Button variant="primary" onClick={() => setModalShow(true)}>
+                                <Button variant="primary" onClick={() => setDeliveryShow(true)}>
                                     Same Day Delivery
                                 </Button>
 
                                 <SameDayDel
-                                    show={modalShow}
-                                    onHide={() => setModalShow(false)}
+                                    show={deliveryShow}
+                                    onHide={() => setDeliveryShow(false)}
                                 />
                             </Popover.Body>
                             </Popover>
