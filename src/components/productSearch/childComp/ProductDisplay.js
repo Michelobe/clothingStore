@@ -9,89 +9,129 @@ function ProductDisplay() {
                 <Card className='col displayCard'>
                     <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
                     <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>NEW ARRIVAL</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            Santa Cruz GrayScale Sweater
+                            <br />
+                            $48.99
                         </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
+                        <div className='colorBtnContainer'>
+                            <Button variant="primary"></Button>
+                            <Button variant="secondary"></Button>
+                            <Button variant="danger"></Button>
+                        </div>
                     </Card.Body>
                 </Card>
                 <Card className='col displayCard'>
                     <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
                     <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>NEW ARRIVAL</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            Santa Cruz GrayScale Sweater
+                            <br />
+                            $48.99
                         </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
+                        <div className='colorBtnContainer'>
+                            <Button variant="primary"></Button>
+                            <Button variant="secondary"></Button>
+                            <Button variant="danger"></Button>
+                        </div>
                     </Card.Body>
                 </Card>
                 <Card className='col displayCard'>
                     <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
                     <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>NEW ARRIVAL</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            Santa Cruz GrayScale Sweater
+                            <br />
+                            $48.99
                         </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
+                        <div className='colorBtnContainer'>
+                            <Button variant="primary"></Button>
+                            <Button variant="secondary"></Button>
+                            <Button variant="danger"></Button>
+                        </div>
                     </Card.Body>
                 </Card>
                 <Card className='col displayCard'>
                     <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
                     <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>NEW ARRIVAL</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            Santa Cruz GrayScale Sweater
+                            <br />
+                            $48.99
                         </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
+                        <div className='colorBtnContainer'>
+                            <Button variant="primary"></Button>
+                            <Button variant="secondary"></Button>
+                            <Button variant="danger"></Button>
+                        </div>
                     </Card.Body>
                 </Card>
                 <Card className='col displayCard'>
                     <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
                     <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>NEW ARRIVAL</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            Santa Cruz GrayScale Sweater
+                            <br />
+                            $48.99
                         </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
+                        <div className='colorBtnContainer'>
+                            <Button variant="primary"></Button>
+                            <Button variant="secondary"></Button>
+                            <Button variant="danger"></Button>
+                        </div>
                     </Card.Body>
                 </Card>
                 <Card className='col displayCard'>
                     <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
                     <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>NEW ARRIVAL</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            Santa Cruz GrayScale Sweater
+                            <br />
+                            $48.99
                         </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
+                        <div className='colorBtnContainer'>
+                            <Button variant="primary"></Button>
+                            <Button variant="secondary"></Button>
+                            <Button variant="danger"></Button>
+                        </div>
                     </Card.Body>
                 </Card>
                 <Card className='col displayCard'>
                     <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
                     <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>NEW ARRIVAL</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            Santa Cruz GrayScale Sweater
+                            <br />
+                            $48.99
                         </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
+                        <div className='colorBtnContainer'>
+                            <Button variant="primary"></Button>
+                            <Button variant="secondary"></Button>
+                            <Button variant="danger"></Button>
+                        </div>
                     </Card.Body>
                 </Card>
                 <Card className='col displayCard'>
                     <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
                     <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>NEW ARRIVAL</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            Santa Cruz GrayScale Sweater
+                            <br />
+                            $48.99
                         </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
+                        <div className='colorBtnContainer'>
+                            <Button variant="primary"></Button>
+                            <Button variant="secondary"></Button>
+                            <Button variant="danger"></Button>
+                        </div>
                     </Card.Body>
                 </Card>
             </div>
