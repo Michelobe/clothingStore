@@ -14,7 +14,6 @@ function FilterMenu() {
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             document.getElementById("filterMenu").style.padding = ".5rem 0";
         } else {
-            document.getElementById("filterMenu").style.padding = "2rem 0";
         }
     }
 
@@ -70,11 +69,11 @@ function FilterMenu() {
             >
                 <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-vcenter">
-                    Modal heading
+                    Find My Store
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <h4>Centered Modal</h4>
+                    <h4>Choose Location</h4>
                     <p>
                     Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
                     dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
@@ -105,11 +104,11 @@ function FilterMenu() {
             >
                 <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-vcenter">
-                    Modal heading
+                    Enter Your Address
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <h4>Centered Modal</h4>
+                    <h4>Address Form</h4>
                     <p>
                     Bacon ipsum dolor amet leberkas pork chop picanha short ribs kevin. Salami meatball kielbasa ribeye, kevin rump jowl tri-tip biltong boudin bacon chuck cow pork chop. Burgdoggen jerky buffalo tail. Pork andouille ground round ball tip pancetta doner, ham meatloaf short ribs buffalo pork chop spare ribs. Bresaola tenderloin meatball beef ribs t-bone, ribeye pancetta shankle sausage. Sausage shoulder landjaeger swine pork alcatra kevin pancetta buffalo ribeye. Shankle corned beef pastrami picanha cow porchetta turducken ball tip fatback doner pig frankfurter pancetta.
                     </p>
@@ -157,7 +156,7 @@ function FilterMenu() {
                         placement='bottom'
                         overlay={
                             <Popover style={{zIndex: 5}}>
-                            <Popover.Header as="h3">{`Dunzo`}</Popover.Header>
+                            <Popover.Header as="h3">{`Anaheim Hills`}</Popover.Header>
                             <Popover.Body>
                                 <Button variant="primary" onClick={() => setPickupShow(true)}>
                                     Free Store Pick Up
@@ -180,7 +179,7 @@ function FilterMenu() {
                         placement='bottom'
                         overlay={
                             <Popover style={{zIndex: 5}}>
-                            <Popover.Header as="h3">{`Dunzo`}</Popover.Header>
+                            <Popover.Header as="h3">{`My Address`}</Popover.Header>
                             <Popover.Body>
                                 <Button variant="primary" onClick={() => setDeliveryShow(true)}>
                                     Same Day Delivery

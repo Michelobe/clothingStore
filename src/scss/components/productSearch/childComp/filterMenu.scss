@@ -6,6 +6,10 @@
     margin-bottom: 3rem;
     top: 2rem;
     background: white;
+    @media only screen and (max-width: 767px) {
+        padding: .5rem 0;
+        margin: 0 0 1rem 0;
+    }
     .btnStyle{
         min-width: 190px;
         display: flex;
@@ -34,6 +38,7 @@
 }
 
 //=== OVERRIDES react-bootstrap COMPONENT STYLING ==
+//WARNING!!! POSSIBLE CONFLICTING CSS FROM Footer.scss
 .btn{
     border-radius: 0;
     width: 100%;

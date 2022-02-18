@@ -28,12 +28,16 @@
                 .formInput{
                     border-radius: 0;
                 }
+                // WARNING!!!! CONFLICTING .btn CSS FROM filterMenu.scss
                 .submitButton{
                     position: absolute;
                     bottom: 0;
                     right: 0;
                     padding: .375rem .4rem;
                     border-radius: 0;
+                    height: 46%;
+                    width: 1.5rem;
+                    margin: 0;
                 }
             }
             .iconContainer{
