@@ -13,7 +13,7 @@ function ProductSearch() {
                 </div>
                 <div className='mobilePadding col-md-10' style={{padding: 0}}>
                     <FilterMenu />
-                    <ProductDisplay style={{padding: 0}} />
+                    <ProductDisplay />
                 </div>
             </div>
         </div>

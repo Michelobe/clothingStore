@@ -134,6 +134,70 @@ function ProductDisplay() {
                         </div>
                     </Card.Body>
                 </Card>
+                <Card className='col displayCard'>
+                    <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                    <Card.Body>
+                        <Card.Title>NEW ARRIVAL</Card.Title>
+                        <Card.Text>
+                            Santa Cruz GrayScale Sweater
+                            <br />
+                            $48.99
+                        </Card.Text>
+                        <div className='colorBtnContainer'>
+                            <Button variant="primary"></Button>
+                            <Button variant="secondary"></Button>
+                            <Button variant="danger"></Button>
+                        </div>
+                    </Card.Body>
+                </Card>
+                <Card className='col displayCard'>
+                    <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                    <Card.Body>
+                        <Card.Title>NEW ARRIVAL</Card.Title>
+                        <Card.Text>
+                            Santa Cruz GrayScale Sweater
+                            <br />
+                            $48.99
+                        </Card.Text>
+                        <div className='colorBtnContainer'>
+                            <Button variant="primary"></Button>
+                            <Button variant="secondary"></Button>
+                            <Button variant="danger"></Button>
+                        </div>
+                    </Card.Body>
+                </Card>
+                <Card className='col displayCard'>
+                    <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                    <Card.Body>
+                        <Card.Title>NEW ARRIVAL</Card.Title>
+                        <Card.Text>
+                            Santa Cruz GrayScale Sweater
+                            <br />
+                            $48.99
+                        </Card.Text>
+                        <div className='colorBtnContainer'>
+                            <Button variant="primary"></Button>
+                            <Button variant="secondary"></Button>
+                            <Button variant="danger"></Button>
+                        </div>
+                    </Card.Body>
+                </Card>
+                <Card className='col displayCard'>
+                    <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                    <Card.Body>
+                        <Card.Title>NEW ARRIVAL</Card.Title>
+                        <Card.Text>
+                            Santa Cruz GrayScale Sweater
+                            <br />
+                            $48.99
+                        </Card.Text>
+                        <div className='colorBtnContainer'>
+                            <Button variant="primary"></Button>
+                            <Button variant="secondary"></Button>
+                            <Button variant="danger"></Button>
+                        </div>
+                    </Card.Body>
+                </Card>
             </div>
         </div>
     );

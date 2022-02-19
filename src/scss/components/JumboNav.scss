@@ -2,6 +2,20 @@
 .jumboBrand{
     margin: 0 0 0 1rem;
 }
+.jumboSearch{
+    position: relative;
+    .searchBtn{
+        position: absolute;
+        right: 0;
+        top: -.35rem;
+        width: auto;
+        &.btn-primary{
+            color: gray;
+            background: transparent;
+            border: none;
+        }
+    }
+}
 .mobileMenu {
     margin: 0;
     padding-left: 1rem;
@@ -27,7 +41,7 @@
 
 // HIDES TABLET/DESKTOP BRAND NAME AND SEARCH BAR
 @media only screen and (max-width: 767px){
-    .mobileMenu.jumboSearch{
+    .mobileMenu{
         position: absolute;
         display: none;
     }
