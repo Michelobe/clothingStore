@@ -12,9 +12,9 @@ function JumboNav() {
 
                     {/*========== ONLY SHOWS >= 768px ===============*/}
                     {/* SEE SCSS FILE FOR NOTES */}
-                    <div className='row mobileMenu'>
-                        <Navbar.Brand className="col-md-4 mobileBrand" href="#home">Clothing Store</Navbar.Brand>
-                        <Form className={`jumboSearch col-sm-12 col-md-4`}>
+                    <div className='row deskMenu'>
+                        <Navbar.Brand className="col-md-4 deskBrand" href="#home">Clothing Store</Navbar.Brand>
+                        <Form className={`jumboSearch col-md-4`}>
                             <FormControl
                             type="search"
                             placeholder="Search"
@@ -22,10 +22,10 @@ function JumboNav() {
                             aria-label="Search"
                             />
                             <Button className='searchBtn'>
-                                <i class="fas fa-search"></i>
+                                <i className="fas fa-search"></i>
                             </Button>
                         </Form>
-                        <Nav className="me-auto justify-content-end col-md-3">
+                        <Nav className="justify-content-end col-md-3">
                             <Nav.Link href="#home">Home</Nav.Link>
                             <Nav.Link href="#link">Link</Nav.Link>
                         </Nav>
