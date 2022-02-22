@@ -5,7 +5,10 @@ import '../scss/components/JumboNav.scss';
 function JumboNav() {
     return (
         <Navbar bg='med' expand='md'>
-            <Navbar.Brand className="col-md-4 jumboBrand" href="#home">Clothing Store</Navbar.Brand>
+            <Navbar.Brand className="col-md-4 jumboBrand" href="#home">
+                <img src={require('./Michelobe-logos_transparent.png')} 
+                     alt="michelobe logo" />
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <div className='col'>
@@ -13,7 +16,10 @@ function JumboNav() {
                     {/*========== ONLY SHOWS >= 768px ===============*/}
                     {/* SEE SCSS FILE FOR NOTES */}
                     <div className='row deskMenu'>
-                        <Navbar.Brand className="col-md-4 deskBrand" href="#home">Clothing Store</Navbar.Brand>
+                        <Navbar.Brand className="col-md-4 deskBrand" href="#home">
+                            <img src={require('./Michelobe-logos_transparent.png')} 
+                                 alt="michelobe logo" />
+                        </Navbar.Brand>
                         <Form className={`jumboSearch col-md-4`}>
                             <FormControl
                             type="search"

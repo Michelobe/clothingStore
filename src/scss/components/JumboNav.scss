@@ -1,11 +1,20 @@
 
 .jumboBrand{
     margin: 0 0 0 1rem;
+    img{
+        height: 2rem;
+        object-fit: fill;
+    }
 }
 .deskMenu{
     --bs-gutter-x: 0;
     .deskBrand{
         padding-left: 2rem;
+        img{
+            height: 2rem;
+            object-fit: fill;
+        }
+        
     }
     .jumboSearch{
         position: relative;
