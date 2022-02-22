@@ -4,7 +4,7 @@ import '../scss/components/JumboNav.scss';
 
 function JumboNav() {
     return (
-        <Navbar bg='med' expand='md'>
+        <Navbar className="navColor" bg='med' expand='md'>
             <Navbar.Brand className="col-md-4 jumboBrand" href="#home">
                 <img src={require('./Michelobe-logos_transparent.png')} 
                      alt="michelobe logo" />
@@ -15,7 +15,7 @@ function JumboNav() {
 
                     {/*========== ONLY SHOWS >= 768px ===============*/}
                     {/* SEE SCSS FILE FOR NOTES */}
-                    <div className='row deskMenu'>
+                    <div className='row bg-light deskMenu gy-2'>
                         <Navbar.Brand className="col-md-4 deskBrand" href="#home">
                             <img src={require('./Michelobe-logos_transparent.png')} 
                                  alt="michelobe logo" />
@@ -38,7 +38,7 @@ function JumboNav() {
                     </div>
                     {/*========== ONLY SHOWS >= 768px ===============*/}
 
-                    <div className='row bg-light mobileMenu'>
+                    <div className='row mobileMenu'>
                         <Nav className="navCenter justify-content-center flex-wrap">
                             <Nav.Link href="#home">GIFTS</Nav.Link>
                             <Nav.Link href="#features">MEN</Nav.Link>

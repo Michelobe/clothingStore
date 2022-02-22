@@ -1,4 +1,9 @@
 
+@media only screen and (max-width: 768px){
+    .navColor{
+        background-color: rgba(248, 249, 250);
+    }
+}
 .jumboBrand{
     margin: 0 0 0 1rem;
     img{
@@ -34,10 +39,7 @@
 .mobileMenu {
     margin: 0;
     padding-left: 1rem;
-    // @media only screen and (min-width: 768px){
-    //     padding: 0;
-    //     margin: 0;
-    // }
+    border-bottom: 1px solid #e9e9e9;
 }
 
 
