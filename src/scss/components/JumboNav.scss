@@ -1,4 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700;800&family=Orbitron:wght@400;500;700;800;900&display=swap');
+// font-family: 'Orbitron', sans-serif;
 
+//TOP CAROUSEL NAVBAR =====================================
+.carousel-indicators{
+    position: absolute;
+    display: none;
+}
+.carousel-inner{
+    width: 856px;
+    @media only screen and (max-width: 900px){
+        width: 767px;
+    }
+    @media only screen and (max-width: 768px){
+        width: 350px;
+    }
+    .slideInfo{
+        color: white;
+        font-size: .8rem;
+        margin: 0;
+        text-align: center;
+    }
+}
+.carousel-control-prev, .carousel-control-next{
+    opacity: 1;
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        height: 1.25rem;
+    }
+}
+
+// MIDDLE CAROUSEL NAVBAR ===================================
+.midNav{
+    background: rgb(209, 209, 209);
+    .midNavLink{
+        font-size: .8rem;
+        opacity: 1;
+        font-weight: bold;
+        i{
+            padding-right: .25rem;
+        }
+    }
+}
+
+
+// MAIN CAROUSEL NAVBAR ===================================
 @media only screen and (max-width: 768px){
     .navColor{
         background-color: rgba(248, 249, 250);
@@ -6,23 +50,23 @@
 }
 .jumboBrand{
     margin: 0 0 0 1rem;
-    img{
-        height: 2rem;
-        object-fit: fill;
-    }
+    display: flex;
+    flex-flow: row;
+    align-items: center;
 }
 .deskMenu{
     --bs-gutter-x: 0;
     .deskBrand{
         padding-left: 2rem;
-        img{
-            height: 2rem;
-            object-fit: fill;
-        }
-        
+        display: flex;
+        flex-flow: row;
+        align-items: center;
     }
     .jumboSearch{
         position: relative;
+        .form-control{
+            border-radius: 50px;
+        }
         .searchBtn{
             position: absolute;
             right: 0;
@@ -34,6 +78,22 @@
                 border: none;
             }
         }
+    }
+}
+
+// FOR BOTH MOBILE AND DESKTOP BRAND AREA ===================================
+.brandMain{
+    border-right: 1px solid gray;
+    padding: 0 .5rem 0 0;
+    h3{
+        margin: 0;
+    }
+}
+.brandSide{
+    padding: 0 0 0 .5rem;
+    h6{
+        font-size: .7rem;
+        margin: 0;
     }
 }
 .mobileMenu {
