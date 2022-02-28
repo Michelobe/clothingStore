@@ -5,7 +5,7 @@ import '../scss/components/JumboNav.scss';
 function JumboNav() {
     return (
         <>
-        {/* TOP CAROUSEL NAVBAR =================================== */}
+        {/* TOP CAROUSEL NAVBAR ===================================== */}
             <Navbar bg="dark justify-content-center" expand="lg">
                 <Carousel>
                     <Carousel.Item>
@@ -20,19 +20,19 @@ function JumboNav() {
                 </Carousel>
             </Navbar>
 
-        {/* MIDDLE CAROUSEL NAVBAR =================================== */}
-            <Navbar className="justify-content-between col-xs-2 px-2 midNav">
+        {/* MIDDLE NAVBAR =========================================== */}
+            <Navbar className="col-xs-2 px-2 midNav">
                 <Nav>
-                    <Nav.Link href="#home" className='midNavLink p-0'>FREE SHIPPING on orders over $49!</Nav.Link>
+                    <Nav.Link href="#home" className='midNavLink  p-0'>FREE SHIPPING on orders over $49!</Nav.Link>
                 </Nav>
                 <Nav>
-                    <Nav.Link href="#link" className='midNavLink p-0'>
+                    <Nav.Link href="#link" className='midNavLink secondNavLink p-0'>
                     <i className="fas fa-shopping-bag"></i>Curbside &amp; In Store Pick Up, Same Day Delivery and Afterpay Now Available
                     </Nav.Link>
                 </Nav>
             </Navbar>
 
-        {/* MAIN CAROUSEL NAVBAR =================================== */}
+        {/* MAIN NAVBAR ============================================= */}
             <Navbar className="navColor" bg='med' expand='md'>
                 <Navbar.Brand className="col-md-4 jumboBrand" href="#home">
                     <div className='brandMain'>
@@ -70,8 +70,16 @@ function JumboNav() {
                                 </Button>
                             </Form>
                             <Nav className="justify-content-end col-md-3">
-                                <Nav.Link href="#home">Home</Nav.Link>
-                                <Nav.Link href="#link">Link</Nav.Link>
+                                <Nav.Link href="#home">
+                                    <div className='userContainer'>
+                                        <i className="far fa-user"></i>
+                                    </div>
+                                </Nav.Link>
+                                <Nav.Link href="#link">
+                                    <div className='bagContainer'>
+                                        <i className="fas fa-shopping-bag"></i>
+                                    </div>
+                                </Nav.Link>
                             </Nav>
                         </div>
                         {/*========== ONLY SHOWS >= 768px ===============*/}

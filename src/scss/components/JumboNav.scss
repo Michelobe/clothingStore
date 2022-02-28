@@ -11,14 +11,19 @@
     @media only screen and (max-width: 900px){
         width: 767px;
     }
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 738px){
         width: 350px;
     }
     .slideInfo{
         color: white;
-        font-size: .8rem;
+        font-size: .7rem;
+        font-weight: 500;
+        letter-spacing: 1px;
         margin: 0;
         text-align: center;
+        @media only screen and (max-width: 775px){
+            padding: .5rem 3.5rem;
+        }
     }
 }
 .carousel-control-prev, .carousel-control-next{
@@ -28,9 +33,13 @@
     }
 }
 
-// MIDDLE CAROUSEL NAVBAR ===================================
+// MIDDLE NAVBAR ==========================================
 .midNav{
     background: rgb(209, 209, 209);
+    justify-content: space-between;
+        @media only screen and (max-width: 768px){
+            justify-content: center;
+        }
     .midNavLink{
         font-size: .8rem;
         opacity: 1;
@@ -39,12 +48,18 @@
             padding-right: .25rem;
         }
     }
+    .secondNavLink{
+        @media only screen and (max-width: 768px){
+            position: absolute;
+            display: none;
+        }
+    }
 }
 
 
-// MAIN CAROUSEL NAVBAR ===================================
-@media only screen and (max-width: 768px){
-    .navColor{
+// MAIN NAVBAR ============================================
+.navColor{
+    @media only screen and (max-width: 768px){
         background-color: rgba(248, 249, 250);
     }
 }
@@ -79,18 +94,49 @@
             }
         }
     }
+    .nav-link{
+        padding: 0 1rem;
+    }
+    .userContainer{
+        border: 2px solid black;
+        border-radius: 50%;
+        overflow: hidden;
+        font-size: 1.5rem;
+        position: relative;
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        i{
+            padding: 0 .45rem;
+            position: absolute;
+            bottom: -1px;
+            left: -4px;
+        }
+    }
+    .bagContainer{
+        font-size: 1.7rem;
+        display: flex;
+        align-items: center;
+        color: black;
+        i{
+            padding: 2px 0 0 0;
+        }
+    }
 }
 
 // FOR BOTH MOBILE AND DESKTOP BRAND AREA ===================================
 .brandMain{
     border-right: 1px solid gray;
     padding: 0 .5rem 0 0;
+    font-family: 'Orbitron', sans-serif;
     h3{
         margin: 0;
     }
 }
 .brandSide{
     padding: 0 0 0 .5rem;
+    font-family: 'Orbitron', sans-serif;
     h6{
         font-size: .7rem;
         margin: 0;
