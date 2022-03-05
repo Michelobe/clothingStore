@@ -37,7 +37,7 @@ function JumboNav() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <div className='col'>
                     <div className='row bg-light deskMenu gy-2'>
-                        <Navbar.Brand className="col-md-4 deskBrand" href="#home">
+                        <Navbar.Brand className="col col-md-4 deskBrand" href="#home">
                             <div className='brandMain'>
                                 <h3>City Gear</h3>
                             </div>

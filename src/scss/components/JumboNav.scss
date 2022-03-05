@@ -62,15 +62,19 @@
     position: relative;
     @media only screen and (max-width: 768px){
         background-color: rgba(248, 249, 250);
-        .collapsed{
+        .navbar-toggler{
             position: absolute;
             right: 10px;
+            top: 10px;
         }
     }
     .deskMenu{
         --bs-gutter-x: 0;
         .navbar-brand{
             margin-right: 0;
+            @media only screen and (max-width: 768px){
+                margin-right: 3rem;
+            }
         }
         .deskBrand{
             padding-left: 2rem;
@@ -104,25 +108,39 @@
             @media only screen and (max-width: 768px){
                 order: -1 !important;
                 justify-content: flex-start;
+                width: auto;
+
             }
             .nav-link{
                 padding: 0 1rem;
+                @media only screen and (max-width: 768px){
+                    padding: 0 .25rem;
+                }
             }
             .userContainer{
                 border: 2px solid black;
                 border-radius: 50%;
                 overflow: hidden;
-                font-size: 1.5rem;
                 position: relative;
+                font-size: 1.5rem;
                 height: 2rem;
                 width: 2rem;
                 display: flex;
                 align-items: center;
+                @media only screen and (max-width: 768px){
+                    font-size: 1.35rem;
+                    height: 1.75rem;
+                    width: 1.75rem;
+                }
                 i{
                     padding: 0 .45rem;
                     position: absolute;
                     bottom: -1px;
                     left: -4px;
+                    @media only screen and (max-width: 768px){
+                        bottom: -4px;
+                        left: -5px;
+                    }
                 }
             }
             .bagContainer{
@@ -130,6 +148,11 @@
                 display: flex;
                 align-items: center;
                 color: black;
+                @media only screen and (max-width: 768px){
+                    font-size: 1.35rem;
+                    height: 1.75rem;
+                    width: 1.75rem;
+                }
                 i{
                     padding: 2px 0 0 0;
                 }
