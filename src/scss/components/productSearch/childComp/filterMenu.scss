@@ -1,14 +1,22 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 .filterMenu{
     border-bottom: 1px dotted black;
-    padding: 2rem 0;
+    padding: 1rem 0;
     margin-bottom: 3rem;
     top: 2rem;
     background: white;
+    align-items: center;
     @media only screen and (max-width: 767px) {
         padding: .5rem 0;
         margin: 0 0 1rem 0;
+    }
+    .productCategory{
+        color: black;
+        padding-left: 1rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
     }
     .btnStyle{
         min-width: 190px;
@@ -16,11 +24,18 @@
         justify-content: center;
     }
     .sortDropDwn{
-        border: 2px solid black;
         font-size: .8rem;
         font-weight: bold;
+        padding: .85rem .55rem;
+        .nav-link{
+            width: 100%;
+            border-radius: 0;
+            background: #5c636a;
+            color: white;
+        }
     }
     .sortBy{
+        padding-right: .25rem;
         @media only screen and (max-width: 767px) {
             position: absolute;
             display: none;
@@ -29,6 +44,8 @@
     .filterBtn{
         #innerBtn{
             width: 100%;
+            background: #5c636a;
+            border-color: #5c636a;
         }
         @media only screen and (min-width: 767px) {
             position: absolute;

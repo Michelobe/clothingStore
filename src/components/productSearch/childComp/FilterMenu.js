@@ -201,10 +201,8 @@ function FilterMenu() {
     return (
         <Nav id="filterMenu" className='d-flex flex-wrap justify-content-between sticky-top filterMenu' variant="pills" style={{'zIndex': 4, 'top': 0}}>
             <div>
-                <Nav.Item>
-                    <Nav.Link disabled>
-                        Men's Clothing
-                    </Nav.Link>
+                <Nav.Item className='productCategory'>
+                    Men's Clothing
                 </Nav.Item>
             </div>
             <div className='d-inline-flex flex-wrap align-items-center justify-content-center'>

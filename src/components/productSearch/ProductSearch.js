@@ -8,7 +8,7 @@ function ProductSearch() {
     return (
         <div className='container largeContainer' style={{padding: 0}}>
             <div className='row menuDispCont'>
-                <div className='col-md-2 gy-5 sticky-md-top stickySideMenu'>
+                <div className='col-md-2 gy-3 sticky-md-top stickySideMenu'>
                     <SideMenu />
                 </div>
                 <div className='mobilePadding col-md-10' style={{padding: 0}}>

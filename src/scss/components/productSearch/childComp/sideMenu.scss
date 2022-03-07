@@ -1,8 +1,9 @@
 
 .sideMenu{
-    top: 3rem;
+    top: 2rem;
     border-top: 1px solid rgba(0, 0, 0, 0.125);
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding-left: .25rem;
     //WARNING!!! THESE BASE BOOTSTRAP CHANGES HAVE EFFECTED 
     //THE ENTIRE DOCUMENT!!!!
     .accordion-button{

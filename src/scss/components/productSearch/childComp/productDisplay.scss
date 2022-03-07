@@ -9,7 +9,7 @@
         grid-gap: .5rem;
         margin: 0;
         .displayCard{
-            padding: 0;
+            padding: 0 0 1rem 0;
             border: none;
             @media only screen and (max-width: 767px) {
                 min-width: 40%;
@@ -19,6 +19,28 @@
             }
             @media only screen and (min-width: 992px) {
                 max-width: 24%;
+            }
+            .imageContainer{
+                position: relative;
+                .quickView{
+                    opacity: 0;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 4.5rem;
+                    height: 4.5rem;
+                    border: 1px solid black;
+                    background: white;
+                    color: black;
+                    margin: 0;
+                }
+                &:hover{
+                    .quickView{
+                        @media only screen and (min-width: 821px) {
+                            opacity: 1;
+                        }
+                    }
+                }
             }
             .card-body{
                 padding: .5rem 0 0 0;

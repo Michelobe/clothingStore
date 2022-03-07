@@ -72,7 +72,7 @@
         --bs-gutter-x: 0;
         .navbar-brand{
             margin-right: 0;
-            @media only screen and (max-width: 768px){
+            @media only screen and (max-width: 767px){
                 margin-right: 3rem;
             }
         }
@@ -84,11 +84,12 @@
         }
         .jumboSearch{
             position: relative;
-            @media only screen and (max-width: 768px){
+            @media only screen and (max-width: 767px){
                 order: 6 !important;
             }
             .form-control{
                 border-radius: 50px;
+                border-color: black !important;
             }
             .searchBtn{
                 position: absolute;
@@ -96,25 +97,29 @@
                 top: -.35rem;
                 width: auto;
                 &.btn-primary{
-                    color: gray;
+                    color: black;
                     background: transparent;
                     border: none;
+                    font-size: 1rem;
                 }
             }
         }
         .userInfo{
             flex-direction: row;
             justify-content: flex-end;
-            @media only screen and (max-width: 768px){
+            @media only screen and (max-width: 767px){
                 order: -1 !important;
                 justify-content: flex-start;
                 width: auto;
 
             }
             .nav-link{
-                padding: 0 1rem;
+                padding: 0 .5rem;
                 @media only screen and (max-width: 768px){
                     padding: 0 .25rem;
+                }
+                &:nth-child(2){
+                    margin-right: .5rem;
                 }
             }
             .userContainer{
