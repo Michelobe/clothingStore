@@ -1,6 +1,6 @@
 import React from 'react';
 import { Nav, NavDropdown, OverlayTrigger, Popover, Button, Modal, Accordion, Form } from 'react-bootstrap';
-import '../../../scss/components/productSearch/childComp/filterMenu.scss';
+import '../../../../scss/components/pages/productSearch/childComp/filterMenu.scss';
 
 function FilterMenu() {
     const [filterShow, setFilterShow] = React.useState(false);

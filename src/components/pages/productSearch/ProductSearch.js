@@ -2,7 +2,7 @@ import React from 'react';
 import SideMenu from './childComp/SideMenu.js';
 import ProductDisplay from './childComp/ProductDisplay.js';
 import FilterMenu from './childComp/FilterMenu.js';
-import '../../scss/components/productSearch/productSearch.scss';
+import '../../../scss/components/pages/productSearch/productSearch.scss';
 
 function ProductSearch() {
     return (

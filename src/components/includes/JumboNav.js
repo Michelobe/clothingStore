@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Form, FormControl, Button, Carousel } from 'react-bootstrap';
-import '../scss/components/JumboNav.scss';
+import '../../scss/components/includes/JumboNav.scss';
 
 function JumboNav() {
     return (

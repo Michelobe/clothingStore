@@ -1,6 +1,6 @@
 import React from 'react';
 import { Accordion, Form } from 'react-bootstrap';
-import '../../../scss/components/productSearch/childComp/sideMenu.scss';
+import '../../../../scss/components/pages/productSearch/childComp/sideMenu.scss';
 
 function SideMenu() {
     return (

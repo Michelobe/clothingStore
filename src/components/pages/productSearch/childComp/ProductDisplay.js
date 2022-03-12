@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
-import '../../../scss/components/productSearch/childComp/productDisplay.scss';
+import '../../../../scss/components/pages/productSearch/childComp/productDisplay.scss';
 
 function ProductDisplay() {
     return (

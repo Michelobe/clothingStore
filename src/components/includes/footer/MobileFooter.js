@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Accordion } from 'react-bootstrap';
-import '../../scss/components/footer/MobileFooter.scss';
+import '../../../scss/components/includes/footer/MobileFooter.scss';
 
 function MobileFooter() {
     return (
