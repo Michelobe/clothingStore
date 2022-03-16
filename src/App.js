@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import JumboNav from "./components/includes/JumboNav.js";
 import Footer from './components/includes/footer/Footer.js';
 import MobileFooter from './components/includes/footer/MobileFooter.js';
-// import ProductSearch from './components/pages/productSearch/ProductSearch.js';
+import ProductSearch from './components/pages/productSearch/ProductSearch.js';
 import SingleProduct from './components/pages/singleProduct/SingleProduct.js';
 
 function App() {
@@ -31,12 +32,16 @@ function App() {
     }
 
     return (
-        <div className="App">
-            <JumboNav />
-            {/* <ProductSearch /> */}
-            <SingleProduct />
-            {width >= 768 ? <Footer /> : <MobileFooter />}
-        </div>
+        <Router>
+            <div className="App">
+                <JumboNav />
+                <Routes>
+                    <Route path='/' element={<ProductSearch />} />
+                    <Route path='/item' element={<SingleProduct />} />
+                </Routes>
+                {width >= 768 ? <Footer /> : <MobileFooter />}
+            </div>
+        </Router>
     );
 }
 

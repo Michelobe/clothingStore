@@ -37,14 +37,14 @@ function JumboNav() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <div className='col'>
                     <div className='row bg-light deskMenu gy-2'>
-                        <Navbar.Brand className="col col-md-4 deskBrand" href="#home">
-                            <div className='brandMain'>
-                                <h3>City Gear</h3>
-                            </div>
-                            <div className='brandSide'>
-                                <h6>Super</h6>
-                                <h6>City</h6>
-                            </div>
+                        <Navbar.Brand className="col col-md-4 deskBrand" href={`/`}>
+                                <div className='brandMain'>
+                                    <h3>City Gear</h3>
+                                </div>
+                                <div className='brandSide'>
+                                    <h6>Super</h6>
+                                    <h6>City</h6>
+                                </div>
                         </Navbar.Brand>
                         <Form className='jumboSearch col-md-4'>
                             <FormControl
