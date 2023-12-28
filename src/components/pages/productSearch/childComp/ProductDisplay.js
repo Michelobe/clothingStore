@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, Button } from 'react-bootstrap';
 import '../../../../scss/components/pages/productSearch/childComp/productDisplay.scss';
+import Sweater from "./sweater.jpg";
 
 function ProductDisplay() {
     return (
@@ -10,7 +11,7 @@ function ProductDisplay() {
                 <Card className='col displayCard'>
                     <div className='imageContainer'>
                         <Link to={`/item`}>
-                            <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                            <Card.Img variant="top" src={Sweater} alt='Sweater' />
                         </Link>
                         <Button href='/item' className='quickView'>Quick View</Button>
                     </div>
@@ -28,7 +29,7 @@ function ProductDisplay() {
                 <Card className='col displayCard'>
                     <div className='imageContainer'>
                         <Link to={`/item`}>
-                            <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                            <Card.Img variant="top" src={Sweater} alt='Sweater' />
                         </Link>
                         <Button href='/item' className='quickView'>Quick View</Button>
                     </div>
@@ -46,7 +47,7 @@ function ProductDisplay() {
                 <Card className='col displayCard'>
                     <div className='imageContainer'>
                         <Link to={`/item`}>
-                            <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                            <Card.Img variant="top" src={Sweater} alt='Sweater' />
                         </Link>
                         <Button href='/item' className='quickView'>Quick View</Button>
                     </div>
@@ -64,7 +65,7 @@ function ProductDisplay() {
                 <Card className='col displayCard'>
                     <div className='imageContainer'>
                         <Link to={`/item`}>
-                            <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                            <Card.Img variant="top" src={Sweater} alt='Sweater' />
                         </Link>
                         <Button href='/item' className='quickView'>Quick View</Button>
                     </div>
@@ -82,7 +83,7 @@ function ProductDisplay() {
                 <Card className='col displayCard'>
                     <div className='imageContainer'>
                         <Link to={`/item`}>
-                            <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                            <Card.Img variant="top" src={Sweater} alt='Sweater' />
                         </Link>
                         <Button href='/item' className='quickView'>Quick View</Button>
                     </div>
@@ -100,7 +101,7 @@ function ProductDisplay() {
                 <Card className='col displayCard'>
                     <div className='imageContainer'>
                         <Link to={`/item`}>
-                            <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                            <Card.Img variant="top" src={Sweater} alt='Sweater' />
                         </Link>
                         <Button href='/item' className='quickView'>Quick View</Button>
                     </div>
@@ -118,7 +119,7 @@ function ProductDisplay() {
                 <Card className='col displayCard'>
                     <div className='imageContainer'>
                         <Link to={`/item`}>
-                            <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                            <Card.Img variant="top" src={Sweater} alt='Sweater' />
                         </Link>
                         <Button href='/item' className='quickView'>Quick View</Button>
                     </div>
@@ -136,7 +137,7 @@ function ProductDisplay() {
                 <Card className='col displayCard'>
                     <div className='imageContainer'>
                         <Link to={`/item`}>
-                            <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                            <Card.Img variant="top" src={Sweater} alt='Sweater' />
                         </Link>
                         <Button href='/item' className='quickView'>Quick View</Button>
                     </div>
@@ -154,7 +155,7 @@ function ProductDisplay() {
                 <Card className='col displayCard'>
                     <div className='imageContainer'>
                         <Link to={`/item`}>
-                            <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                            <Card.Img variant="top" src={Sweater} alt='Sweater' />
                         </Link>
                         <Button href='/item' className='quickView'>Quick View</Button>
                     </div>
@@ -172,7 +173,7 @@ function ProductDisplay() {
                 <Card className='col displayCard'>
                     <div className='imageContainer'>
                         <Link to={`/item`}>
-                            <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                            <Card.Img variant="top" src={Sweater} alt='Sweater' />
                         </Link>
                         <Button href='/item' className='quickView'>Quick View</Button>
                     </div>
@@ -190,7 +191,7 @@ function ProductDisplay() {
                 <Card className='col displayCard'>
                     <div className='imageContainer'>
                         <Link to={`/item`}>
-                            <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                            <Card.Img variant="top" src={Sweater} alt='Sweater' />
                         </Link>
                         <Button href='/item' className='quickView'>Quick View</Button>
                     </div>
@@ -208,7 +209,7 @@ function ProductDisplay() {
                 <Card className='col displayCard'>
                     <div className='imageContainer'>
                         <Link to={`/item`}>
-                            <Card.Img variant="top" src={require('./shoe.jpg')} alt='shoe' />
+                            <Card.Img variant="top" src={Sweater} alt='Sweater' />
                         </Link>
                         <Button href='/item' className='quickView'>Quick View</Button>
                     </div>

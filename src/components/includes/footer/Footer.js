@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Form, Button } from 'react-bootstrap';
-import '../../../scss/components/includes/footer/footer.scss';
+import '../../../scss/components/includes/footer/Footer.scss';
 
 function Footer() {
     return (

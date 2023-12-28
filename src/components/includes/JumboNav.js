@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Form, FormControl, Button, Carousel } from 'react-bootstrap';
-import '../../scss/components/includes/jumboNav.scss';
+import '../../scss/components/includes/JumboNav.scss';
 
 function JumboNav() {
     return (
@@ -39,7 +39,7 @@ function JumboNav() {
                     <div className='row bg-light deskMenu gy-2'>
                         <Navbar.Brand className="col col-md-4 deskBrand" href={`/`}>
                                 <div className='brandMain'>
-                                    <h3>Marauder</h3>
+                                    <h3>City Gear</h3>
                                 </div>
                                 <div className='brandSide'>
                                     <h6>Super</h6>

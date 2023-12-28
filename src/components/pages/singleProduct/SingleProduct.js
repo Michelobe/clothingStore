@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../../scss/components/pages/singleProduct/singleProduct.scss';
+import Sweater from "./sweater.jpg";
 
 function SingleProduct() {
     return (
@@ -12,14 +13,14 @@ function SingleProduct() {
                     <div className='row'>
                         <div className='col-2'>
                             <div className='thumbImg row'>
-                                <img src={require('./shoe.jpg')} alt='sweatshirt' />
+                                <img src={Sweater} alt='sweatshirt' />
                             </div>
                             <div className='thumbImg row'>
-                                <img src={require('./shoe.jpg')} alt='sweatshirt' />
+                                <img src={Sweater} alt='sweatshirt' />
                             </div>
                         </div>
                         <div className='jumboImg col-10 mx-auto'>
-                            <img src={require('./shoe.jpg')} alt='sweatshirt' />
+                            <img src={Sweater} alt='sweatshirt' />
                         </div>
                     </div>
                 </div>
@@ -99,7 +100,7 @@ function SingleProduct() {
             <div className='row'>
                 <div className='col'>
                     <div className='row'>
-                        <img src={require('./shoe.jpg')} alt='sweatshirt' />
+                        <img src={Sweater} alt='sweatshirt' />
                     </div>
                     <div className='row'>
                         <p>Santa Cruz sweatshirt</p>
@@ -107,7 +108,7 @@ function SingleProduct() {
                 </div>
                 <div className='col'>
                     <div className='row'>
-                        <img src={require('./shoe.jpg')} alt='sweatshirt' />
+                        <img src={Sweater} alt='sweatshirt' />
                     </div>
                     <div className='row'>
                         <p>Santa Cruz sweatshirt</p>
@@ -115,7 +116,7 @@ function SingleProduct() {
                 </div>
                 <div className='col'>
                     <div className='row'>
-                        <img src={require('./shoe.jpg')} alt='sweatshirt' />
+                        <img src={Sweater} alt='sweatshirt' />
                     </div>
                     <div className='row'>
                         <p>Santa Cruz sweatshirt</p>
@@ -123,7 +124,7 @@ function SingleProduct() {
                 </div>
                 <div className='col'>
                     <div className='row'>
-                        <img src={require('./shoe.jpg')} alt='sweatshirt' />
+                        <img src={Sweater} alt='sweatshirt' />
                     </div>
                     <div className='row'>
                         <p>Santa Cruz sweatshirt</p>

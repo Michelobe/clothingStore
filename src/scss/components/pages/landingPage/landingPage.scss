@@ -1,13 +1,637 @@
-
-.imgContainer{
-    max-height: 600px;
-    border: 3px solid red;
-    border-radius: 10px;
+#jumboTron{
+    height: auto;
+    // background: blue;
+    position: relative;
     overflow: hidden;
-    img{
-        width: 100%;
+    width: 98vw;
+    .leftArrow{
+        font-size: 4rem;
+        z-index: 2;
+        position: absolute;
+        top: 40%;
+        &:hover ~ .jumboOne{
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    .rightArrow{
+        font-size: 4rem;
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        top: 40%;
+        &:hover ~ .jumboTwo{
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    .jumboOne{
+        // width: 100%;
+        // height: 100%;
+        // background: url("/img/grudenBobble.jpg") center center no-repeat;
+        position: absolute;
+        transition: all .5s ease-in-out;
+        transform: translate3d(-100%, 0, 0);
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .jumboTwo{
+        // width: 100%;
+        // height: 100%;
+        // background: url("/img/raidersCap.jpg") center center no-repeat;
+        position: absolute;
+        transition: all .5s ease-in-out;
+        transform: translate3d(100%, 0, 0);
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .jumboThree{
+        // width: 100%;
+        // height: 100%;
+        // background: url("/img/raiderClothes.jpg") center center no-repeat;
+            img{
+                width: 100%;
+                height: auto;
+            }
     }
 }
-.mainJumbo{
-    margin-bottom: 2rem;
+
+
+
+
+
+// TABLETS
+@media only screen and (max-width: 960px) {
+    #jumboTron{
+        height: auto;
+        overflow: hidden;
+        .leftArrow{
+            font-size: 4rem;
+            z-index: 2;
+            position: absolute;
+            top: 40%;
+            &:hover ~ .jumboOne{
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        .rightArrow{
+            font-size: 4rem;
+            z-index: 2;
+            position: absolute;
+            right: 0;
+            top: 40%;
+            &:hover ~ .jumboTwo{
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        
+    }
+}
+
+
+
+// PHONES
+@media only screen and (max-width: 960px) {
+    #jumboTron{
+        .leftArrow{
+            font-size: 2rem;
+            padding: 0 1rem;
+        }
+        .rightArrow{
+            font-size: 2rem;
+            padding: 0 1rem;
+        }
+        
+    }
+}
+
+#featured{
+    background: white;
+    padding: 2rem 0;
+    .container{
+        max-width: 1400px;
+        // overflow: hidden;
+        .shopGender{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 400px;
+            grid-gap: 15px;
+            .shopOne{
+                // height: 400px;
+                width: 100%;
+                display: inline-block;
+                margin: 0 10px;
+                overflow: hidden;
+                a{
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            .shopTwo{
+                // height: 400px;
+                width: 100%;
+                display: inline-block;
+                margin: 0 10px;
+                overflow: hidden;
+                a{
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        .featuredNav{
+            border-bottom: solid 2px #a9acae;
+            padding-top: 2rem;
+            ul{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                justify-content: center;
+                height: 3.4rem;
+                li{
+                    display: grid;
+                    font-size: 1.25rem;
+                    padding: 1rem 1.25rem;
+                    transition: all .3s ease-in-out;
+                    width: 100%;
+                    &:hover{
+                        border-bottom: 5px solid black;
+                    }
+                    a{
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: #727272;
+                        font-family: 'Open Sans Condensed', sans-serif;
+                        justify-self: center;
+                    }
+                }
+            }
+        }
+
+        .shopDisplay{
+            padding: 2rem 0;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            .card{
+                img{
+                    height: auto;
+                    width: 100%;
+                }
+                .picDetails{
+                    max-width: 200px;
+                    display: grid;
+                    justify-content: center;
+                    h5{
+                        padding-bottom: 10px;
+                        font-weight: bold;
+                    }
+                    p{
+                        font-weight: bold;
+                        max-width: 250px;
+                    }
+                }
+            }
+        }
+
+        .shopAll{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+
+        .personalJersey{
+            width: 100%;
+            padding: 2rem 2rem 0;
+            text-align: center;
+            a{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        
+    }
+}
+
+
+// LARGE TABLETS
+@media only screen and (max-width: 1024px){
+    #featured{
+        .container{
+            max-width: 960px;
+            .shopGender{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                justify-items: center;
+                text-align: center;
+                height: 14rem;
+                padding: 1rem;
+                .shopOne{
+                    a{
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+                .shopTwo{
+                    a{
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+    
+            .shopDisplay{
+                justify-content: space-around;
+                .card{
+                    min-width: 200px;
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+// TABLETS
+@media only screen and (max-width: 960px){
+    #featured{
+        .container{
+            max-width: 960px;
+            .shopGender{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                justify-items: center;
+                text-align: center;
+                height: 14rem;
+                padding: 1rem;
+                .shopOne{
+                    a{
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+                .shopTwo{
+                    a{
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+    
+            .shopDisplay{
+                justify-content: space-around;
+                .card{
+                    min-width: 200px;
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+}
+
+// PHONES
+@media only screen and (max-width: 767px){
+    #featured{
+        padding: 1rem 0;
+        .container{
+            max-width: 767px;
+            .shopGender{
+                // grid-template-columns: 1fr 1fr;
+                // grid-template-rows: 1fr;
+                // justify-items: center;
+                // text-align: center;
+                height: auto;
+                // padding: 1rem;
+                .shopOne{
+                    a{
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+                .shopTwo{
+                    a{
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+
+            .featuredNav{
+                padding-top: 0;
+                ul{
+                    height: 3.5rem;
+                    padding-top: 1.75rem;
+                    li{
+                        font-size: 1rem;
+                        padding: 0 1rem;
+                        &:hover{
+                            border-bottom: 5px solid black;
+                        }
+                        a{
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: #727272;
+                            font-family: 'Open Sans Condensed', sans-serif;
+                            justify-self: center;
+                        }
+                    }
+                }
+            }
+    
+            .shopDisplay{
+                padding: 2rem 0;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                .card{
+                    height: auto;
+                    max-width: 50px;
+                    // img{
+                    //     height: auto;
+                    //     width: 100%;
+                    // }
+                    .picDetails{
+                        // max-width: 200px;
+                        display: grid;
+                        justify-content: center;
+                        h5{
+                            padding-bottom: 10px;
+                            font-weight: bold;
+                        }
+                        p{
+                            font-weight: bold;
+                            max-width: 250px;
+                        }
+                    }
+                }
+            }
+
+            .shopAll{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                a{
+                    &:nth-child(1),
+                    &:nth-child(4){
+                        display: none;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#raiderNation{
+    background: url("../../../../images/pages/landingPage/contactBackground.jpg");
+    width: 100%;
+    color: white;
+    padding-bottom: 3rem;
+    .container{
+        max-width: 1250px;
+        .header{
+            padding: 2rem 0;
+            h1{
+                text-align: center;
+                font-weight: 700;
+                font-size: 10rem;
+                text-transform: uppercase;
+            }
+        }
+
+        .raiderContact{
+            .newsLetter{
+                display: inline-block;
+                width: 49%;
+                h3{
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    text-transform: uppercase;
+                }
+                p{
+                    font-size: .7rem;
+                    padding: .8rem 0;
+                    color: #868889;
+                }
+                .contactInput{
+                    input{
+                        border: 3px solid #e3e5e6;
+                        width: 70%;
+                        line-height: 2.5;
+                        font-size: 1rem;
+                        padding-left: 15px;
+                        &::placeholder{
+                            color: #c4c4c4;
+                            text-transform: capitalize;
+                        }
+                    }
+                    .subscribeButton{
+                        margin-left: 7px;
+                        display: inline-block;
+                        background: #868889;
+                        line-height: 3;
+                        font-size: 1rem;
+                        padding: 0 2rem;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        &:hover{
+                            background: #c4c4c4;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .socialMedia{
+                display: inline-block;
+                width: 50%;
+                text-align: center;
+                ul{
+                    li{
+                        display: inline-block;
+                        font-size: 3rem;
+                        width: 100px;
+                        height: 100px;
+                        padding: 1rem;
+                        margin: 0 1rem;
+                        border: 2px solid #868889;
+                        border-radius: 50%;
+                        text-align: center;
+                        position: relative;
+                        &:nth-child(1){
+                            a{
+                                right: 35%;
+                            }
+                        }
+                        &:nth-child(3){
+                            a{
+                                right: 28%;
+                            }
+                        }
+                        &:hover{
+                            background: white;
+                            a{
+                                color: black;
+                            }
+                        }
+                        a{
+                            position: absolute;
+                            top: 26%;
+                            right: 25%;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// LARGE TABLETS
+@media only screen and (max-width: 1024px){
+    #raiderNation{
+        .container{
+            max-width: 960px;
+            .header{
+                h1{
+                    font-size: 5rem;
+                }
+            }
+    
+            .raiderContact{
+                display: flex;
+                justify-content: space-around;
+                .newsLetter{
+                    width: 64%;
+                    text-align: center;
+                    .contactInput{
+                        input{
+                            width: 70%;
+                            line-height: 2;
+                        }
+                        .subscribeButton{
+                            margin: 1.5rem 0 0 7px;
+                        }
+                    }
+                }
+                .socialMedia{
+                    ul{
+                        li{
+                            margin: 0 1rem 1rem 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// TABLETS
+@media only screen and (max-width: 960px){
+    #raiderNation{
+        .container{
+            max-width: 960px;
+            .header{
+                h1{
+                    font-size: 5rem;
+                }
+            }
+    
+            .raiderContact{
+                display: flex;
+                justify-content: space-around;
+                .newsLetter{
+                    width: 64%;
+                    text-align: center;
+                    .contactInput{
+                        input{
+                            width: 70%;
+                            line-height: 2;
+                        }
+                        .subscribeButton{
+                            margin: 1.5rem 0 0 7px;
+                        }
+                    }
+                }
+                .socialMedia{
+                    ul{
+                        li{
+                            margin: 0 1rem 1rem 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// PHONES
+@media only screen and (max-width: 767px){
+    #raiderNation{
+        .container{
+            max-width: 767px;
+            .header{
+                h1{
+                    font-size: 2.5rem;
+                }
+            }
+    
+            .raiderContact{
+                display: inline-block;
+                // justify-content: space-around;
+                .newsLetter{
+                    width: 100%;
+                    text-align: center;
+                    .contactInput{
+                        input{
+                            width: 70%;
+                            line-height: 2;
+                        }
+                        .subscribeButton{
+                            margin: 1.5rem 0 0 7px;
+                        }
+                    }
+                }
+                .socialMedia{
+                    width: 100%;
+                    ul{
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: center;
+                        align-content: center;
+                        li{
+                            // display: flex;
+                            // flex-flow: row wrap;
+                            margin: 1.5rem 1rem 0 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

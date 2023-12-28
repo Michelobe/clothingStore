@@ -187,4 +187,72 @@
     margin: 0;
     padding-left: 1rem;
     border-bottom: 1px solid #e9e9e9;
+    .hoverMenu{
+        visibility: hidden;
+        padding: 1rem;
+        position: absolute;
+        top: 3.27rem;
+        left: 0;
+        z-index: 6;
+        background: white;
+        width: 90%;
+        height: 400px;
+        display: grid;
+        grid-template-rows: 9fr 1fr;
+        .divisionContainer{
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            width: 100%;
+            overflow: auto;
+            .divisionChoice{
+                ul{
+                    display: flex;
+                    flex-flow: column;
+                    li{
+                        padding: .5rem 0;
+                        &:hover{
+                            border: none;
+                        }
+                        a{
+                            font-size: 1.1rem;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            .divisionCard{
+                height: auto;
+                width: 100%
+                h3{
+                    padding: 10px 0;
+                    font-weight: bold;
+                    font-size: 1rem;
+                }
+                p{
+                    font-size: 1rem;
+                    font-weight: bold;
+                    color: #727272;
+                    a{
+                        &:hover{
+                            border-bottom: 1px solid black;
+                        }
+                    }
+                }
+            }
+        }
+        .divisionButton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            &:hover{
+                background: gray;
+            }
+            a{
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
 }
