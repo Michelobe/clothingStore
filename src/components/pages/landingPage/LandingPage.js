@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../../../scss/components/pages/landingPage/landingPage.scss';
 //IMAGES
 import GrudenBobble from "../../../images/pages/landingPage/grudenBobble.jpg";
@@ -23,10 +23,10 @@ function LandingPage() {
         <div>
             <section id="jumboTron">
                 <div class="leftArrow">
-                    <a href="#home"><i class="fas fa-chevron-left"></i></a>
+                    <Link to={`/products`}><i class="fas fa-chevron-left"></i></Link>
                 </div>
                 <div class="rightArrow">
-                    <a href="#home"><i class="fas fa-chevron-right"></i></a>
+                    <Link to={`/products`}><i class="fas fa-chevron-right"></i></Link>
                 </div>
                 <div class="jumboOne">
                     <img src={GrudenBobble}alt="Gruden Bobble" />
@@ -43,26 +43,26 @@ function LandingPage() {
                 <div class="container">
                     <div class="shopGender">
                     <div class="shopOne">
-                        <a href="#home"><img src={ShopMen}alt="Shop Men" /></a>
+                        <Link to={`/products`}><img src={ShopMen}alt="Shop Men" /></Link>
                     </div>
                     <div class="shopTwo">
-                        <a href="#home"><img src={ShopWomen}alt="Shop Women" /></a>
+                        <Link to={`/products`}><img src={ShopWomen}alt="Shop Women" /></Link>
                     </div>
                     </div>
             
                     <div class="featuredNav">
                     <ul>
                         <li>
-                        <a href="#home">Featured</a>
+                        <Link to={`/products`}>Featured</Link>
                         </li>
                         <li>
-                        <a href="#home">New</a>
+                        <Link to={`/products`}>New</Link>
                         </li>
                         <li>
-                        <a href="#home">Fan News</a>
+                        <Link to={`/products`}>Fan News</Link>
                         </li>
                         <li>
-                        <a href="#home">Players</a>
+                        <Link to={`/products`}>Players</Link>
                         </li>
                     </ul>
                     </div>
@@ -106,24 +106,24 @@ function LandingPage() {
                     </div>
             
                     <div class="shopAll">
-                        <a href="#home">
+                        <Link to={`/products`}>
                             <img src={ShopKids} alt="Shop Kids" />
-                        </a>
-                        <a href="#home">
+                        </Link>
+                        <Link to={`/products`}>
                             <img src={ShopJerseys} alt="Shop Jerseys" />
-                        </a>
-                        <a href="#home">
+                        </Link>
+                        <Link to={`/products`}>
                             <img src={ShopHats} alt="Shop Hats" />
-                        </a>
-                        <a href="#home">
+                        </Link>
+                        <Link to={`/products`}>
                             <img src={ShopNovelty} alt="Shop Novelties" />
-                        </a>
+                        </Link>
                     </div>
             
                     <div class="personalJersey">
-                        <a href="#home">
+                        <Link to={`/products`}>
                             <img src={CustomJersey} alt="Custom Jersey" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -145,10 +145,10 @@ function LandingPage() {
                         </div>
                         <div class="socialMedia">
                             <ul>
-                            <li><a href="www.facebook.com" target = "_blank"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="www.twitter.com" target = "_blank"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="www.instagram.com" target = "_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="www.raiders.com/fan/" target = "_blank"><i class="fab fa-teamspeak"></i></a></li>
+                            <li><i class="fab fa-facebook-f"></i></li>
+                            <li><i class="fab fa-twitter"></i></li>
+                            <li><i class="fab fa-instagram"></i></li>
+                            <li><i class="fab fa-teamspeak"></i></li>
                             </ul>
                         </div>
                     </div>
