@@ -22,20 +22,22 @@ function LandingPage() {
     return (
         <div>
             <section id="jumboTron">
-                <div class="leftArrow">
-                    <Link to={`/products`}><i class="fas fa-chevron-left"></i></Link>
-                </div>
-                <div class="rightArrow">
-                    <Link to={`/products`}><i class="fas fa-chevron-right"></i></Link>
-                </div>
-                <div class="jumboOne">
-                    <img src={GrudenBobble}alt="Gruden Bobble" />
-                </div>
-                <div class="jumboTwo">
-                    <img src={RaidersCap}alt="Raider Cap" />
-                </div>
-                <div class="jumboThree">
-                    <img src={RaiderClothes}alt="Raider Clothes" />
+                <div class="container">
+                    <div class="leftArrow">
+                        <Link to={`/products`}><i class="fas fa-chevron-left"></i></Link>
+                    </div>
+                    <div class="rightArrow">
+                        <Link to={`/products`}><i class="fas fa-chevron-right"></i></Link>
+                    </div>
+                    <div class="jumboOne">
+                        <img src={GrudenBobble}alt="Gruden Bobble" />
+                    </div>
+                    <div class="jumboTwo">
+                        <img src={RaidersCap}alt="Raider Cap" />
+                    </div>
+                    <div class="jumboThree">
+                        <img src={RaiderClothes}alt="Raider Clothes" />
+                    </div>
                 </div>
             </section>
         
@@ -131,7 +133,7 @@ function LandingPage() {
             <section id="raiderNation">
                 <div class="container">
                     <div class="header">
-                        <h1>#RaiderNation</h1>
+                        <h1>#CityGear</h1>
                     </div>
                     <div class="raiderContact">
                         <div class="newsLetter">
@@ -142,14 +144,6 @@ function LandingPage() {
                                     placeholder = "Enter your email address" />
                             <div class="subscribeButton">Subscribe</div>
                             </div>
-                        </div>
-                        <div class="socialMedia">
-                            <ul>
-                            <li><i class="fab fa-facebook-f"></i></li>
-                            <li><i class="fab fa-twitter"></i></li>
-                            <li><i class="fab fa-instagram"></i></li>
-                            <li><i class="fab fa-teamspeak"></i></li>
-                            </ul>
                         </div>
                     </div>
                 </div>

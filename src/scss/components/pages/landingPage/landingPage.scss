@@ -1,60 +1,64 @@
 #jumboTron{
-    height: auto;
-    // background: blue;
-    position: relative;
-    overflow: hidden;
-    width: 98vw;
-    .leftArrow{
-        font-size: 4rem;
-        z-index: 2;
-        position: absolute;
-        top: 40%;
-        &:hover ~ .jumboOne{
-            transform: translate3d(0, 0, 0);
+    .container{
+        max-width: 1500px;
+        height: auto;
+        // background: blue;
+        position: relative;
+        overflow: hidden;
+        width: 98vw;
+        padding: 0;
+        .leftArrow{
+            font-size: 4rem;
+            z-index: 2;
+            position: absolute;
+            top: 40%;
+            &:hover ~ .jumboOne{
+                transform: translate3d(0, 0, 0);
+            }
         }
-    }
-    .rightArrow{
-        font-size: 4rem;
-        z-index: 2;
-        position: absolute;
-        right: 0;
-        top: 40%;
-        &:hover ~ .jumboTwo{
-            transform: translate3d(0, 0, 0);
+        .rightArrow{
+            font-size: 4rem;
+            z-index: 2;
+            position: absolute;
+            right: 0;
+            top: 40%;
+            &:hover ~ .jumboTwo{
+                transform: translate3d(0, 0, 0);
+            }
         }
-    }
-    .jumboOne{
-        // width: 100%;
-        // height: 100%;
-        // background: url("/img/grudenBobble.jpg") center center no-repeat;
-        position: absolute;
-        transition: all .5s ease-in-out;
-        transform: translate3d(-100%, 0, 0);
-        img{
-            width: 100%;
-            height: auto;
-        }
-    }
-    .jumboTwo{
-        // width: 100%;
-        // height: 100%;
-        // background: url("/img/raidersCap.jpg") center center no-repeat;
-        position: absolute;
-        transition: all .5s ease-in-out;
-        transform: translate3d(100%, 0, 0);
-        img{
-            width: 100%;
-            height: auto;
-        }
-    }
-    .jumboThree{
-        // width: 100%;
-        // height: 100%;
-        // background: url("/img/raiderClothes.jpg") center center no-repeat;
+        .jumboOne{
+            // width: 100%;
+            // height: 100%;
+            // background: url("/img/grudenBobble.jpg") center center no-repeat;
+            position: absolute;
+            transition: all .5s ease-in-out;
+            transform: translate3d(-100%, 0, 0);
             img{
                 width: 100%;
                 height: auto;
             }
+        }
+        .jumboTwo{
+            // width: 100%;
+            // height: 100%;
+            // background: url("/img/raidersCap.jpg") center center no-repeat;
+            position: absolute;
+            transition: all .5s ease-in-out;
+            transform: translate3d(100%, 0, 0);
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .jumboThree{
+            // width: 100%;
+            // height: 100%;
+            // background: url("/img/raiderClothes.jpg") center center no-repeat;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+        }
     }
 }
 
@@ -111,8 +115,8 @@
     background: white;
     padding: 2rem 0;
     .container{
-        max-width: 1400px;
-        // overflow: hidden;
+        max-width: 1500px;
+        padding: 0;
         .shopGender{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -122,7 +126,6 @@
                 // height: 400px;
                 width: 100%;
                 display: inline-block;
-                margin: 0 10px;
                 overflow: hidden;
                 a{
                     img{
@@ -135,7 +138,6 @@
                 // height: 400px;
                 width: 100%;
                 display: inline-block;
-                margin: 0 10px;
                 overflow: hidden;
                 a{
                     img{
@@ -177,19 +179,20 @@
         .shopDisplay{
             padding: 2rem 0;
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
             justify-content: space-between;
             .card{
+                width: 20%;
                 img{
                     height: auto;
                     width: 100%;
                 }
                 .picDetails{
-                    max-width: 200px;
-                    display: grid;
-                    justify-content: center;
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
                     h5{
-                        padding-bottom: 10px;
+                        padding-top: 10px;
                         font-weight: bold;
                     }
                     p{
@@ -203,12 +206,18 @@
         .shopAll{
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-around;
+            justify-content: space-between;
+            a{
+                width: 24%;
+                img{
+                    width: 100%;
+                }
+            }
         }
 
         .personalJersey{
             width: 100%;
-            padding: 2rem 2rem 0;
+            padding-top: 2rem;
             text-align: center;
             a{
                 img{
@@ -255,8 +264,8 @@
             .shopDisplay{
                 justify-content: space-around;
                 .card{
-                    min-width: 200px;
                     padding: 1rem 0;
+                    width: 25%;
                 }
             }
         }
@@ -421,9 +430,14 @@
         }
 
         .raiderContact{
+            display: flex;
+            justify-content: center;
             .newsLetter{
                 display: inline-block;
                 width: 49%;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
                 h3{
                     font-weight: 700;
                     font-size: 1.5rem;
@@ -435,6 +449,9 @@
                     color: #868889;
                 }
                 .contactInput{
+                    display: flex;
+                    flex-flow: row;
+                    min-width: 600px;
                     input{
                         border: 3px solid #e3e5e6;
                         width: 70%;
