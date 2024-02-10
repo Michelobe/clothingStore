@@ -16,8 +16,11 @@ $contactBackground: url("../../../../images/pages/landingPage/contactBackground.
   }
   
   .container{
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
   }
   
   @media only screen and (max-width: 1024px){
@@ -49,7 +52,6 @@ $contactBackground: url("../../../../images/pages/landingPage/contactBackground.
     // background: blue;
     position: relative;
     overflow: hidden;
-    width: 98vw;
     .leftArrow{
         font-size: 4rem;
         z-index: 2;
@@ -175,7 +177,6 @@ $contactBackground: url("../../../../images/pages/landingPage/contactBackground.
                 // height: 400px;
                 width: 100%;
                 display: inline-block;
-                margin: 0 10px;
                 overflow: hidden;
                 a{
                     img{
@@ -188,7 +189,6 @@ $contactBackground: url("../../../../images/pages/landingPage/contactBackground.
                 // height: 400px;
                 width: 100%;
                 display: inline-block;
-                margin: 0 10px;
                 overflow: hidden;
                 a{
                     img{
@@ -261,7 +261,7 @@ $contactBackground: url("../../../../images/pages/landingPage/contactBackground.
 
         .personalJersey{
             width: 100%;
-            padding: 2rem 2rem 0;
+            padding: 2rem 0 0 0;
             text-align: center;
             a{
                 img{
@@ -481,6 +481,7 @@ $contactBackground: url("../../../../images/pages/landingPage/contactBackground.
         }
 
         .raiderContact{
+            text-align: center;
             .newsLetter{
                 display: inline-block;
                 width: 49%;
