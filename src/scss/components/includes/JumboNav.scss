@@ -36,6 +36,7 @@
 // MIDDLE NAVBAR ==========================================
 .midNav{
     background: rgb(209, 209, 209);
+    margin-bottom: .25rem;
     justify-content: space-between;
         @media only screen and (max-width: 768px){
             justify-content: center;
@@ -67,7 +68,8 @@
         .navbar-toggler{
             position: absolute;
             right: 10px;
-            top: 10px;
+            top: 0;
+            z-index: 1000;
         }
     }
     &.navbar{
@@ -82,13 +84,14 @@
             }
         }
         .deskBrand{
-            padding-left: 1rem;
+            padding-left: 2rem;
             display: flex;
             flex-flow: row;
             align-items: center;
         }
         .jumboSearch{
             position: relative;
+            margin-top: .8rem;
             @media only screen and (max-width: 767px){
                 order: 6 !important;
             }
